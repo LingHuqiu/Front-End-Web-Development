@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>CSS网页布局</title>
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--顶部-->
+  <div class="header">
+    <div class="logo"><img src="images/logo.png"></div>
+      <div class="menu">
+        <ul>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>GALLERY</li>
+        <li>FACULTY</li>
+        <li>EVNETS</li>
+        <li>CONTACT</li>
+      </ul>
+    </div>
+  </div>
+<!--banner区-->
+  <div class="banner">
+    <!--大图-->
+    <div class="pic">
+      <img src="images/banner3.jpg">
+    </div>
+    <!--遮罩层-->
+    <div class="topLayer"></div>
+    <!--遮罩层上的内容-->
+    <div class="forms">
+      <form  class="register">
+        <div>
+          <input type="text" name="username" placeholder="your Name" class="registerText textstype"/>
+        </div>
+        <div>
+          <input type="text" name="userphone" placeholder="your Phone" class="registerText textstype"/>
+        </div>
+        <div>
+          <input type="text" name="userEmail" placeholder="your Email" class="registerText textstype"/>
+        </div>
+        <div>
+          <textarea  name="Comments"  rows="8" cols="30" placeholder="Write Your Comments Here." class="textstype">
+          </textarea>
+        </div>
+        <div>
+          <input type="button" name="sendMessage" value="SEND MESSAGE" class="sendButton">
+        </div>
+      </form>
+    </div>
+  </div>
+    <!--about区-->
+    <div class="about">
+      <!-- 用来居中显示 -->
+      <div class="about-top">
+        <!--ABOUT区的标题部分-->
+        <div class="title">
+          <h1>ABOUT</h1>
+          <div class="lines"></div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+        <!--About区的中间部分-->
+        <div class="middle">
+          <!--左边-->
+          <div class="middle_left">
+            <p class="middle_left_title">A WORD</p>
+            <p class="middle_left_title">ABOUT US</p>
+            <!--遮罩层-->
+            <!-- <div class="middle_left_topLayer"></div> -->
+            <!--遮罩层上的内容-->
+            <div class="middle_left_text">
+              <p class="middle_left_p">Praesent dignissim viverra est, sed bibendum ligula congue non. Sed ac nisl et felis gravida commodo? Suspendisse eget ullamcorper ipsum. Suspendisse diam amet.</p>
+              <input class="btn_explore" type="button" name="btn_explore" value="EXPLORE">
+            </div>
+          </div>
+          <!--中间-->
+          <div class="middle_img">
+            <img src="images/bb3.jpg">
+          </div>
+          <!--右边-->
+          <div class="middle_right">
+            <div class="right_container">
+              <h1>70000</h1>
+              <div class="lines"></div>
+              <p>STUDENTS</p>
+            </div>
+            <div class="right_container">
+              <h1>600</h1>
+              <div class="lines"></div>
+              <p>FACULTY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--about区bottom部分-->
+      <div class="bottom">
+        <!--上排四个div的容器-->
+        <div class="bottom_layer">
+          <div class="bottom_img">
+            <div class="triangle">
+            </div>
+            <img src="images/b1.jpg">
+          </div>
+          <div class="bottom_word">
+            <h1>Library</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting indstry</p>
+            <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+            <input class="btn_explore" type="button" name="btn_explore" value="EXPLORE">
+          </div>
+            <div class="bottom_img">
+              <div class="triangle">
+              </div>
+              <img src="images/b2.jpg">
+            </div>
+            <div class="bottom_word">
+              <h1>Computer Lab</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting indstry</p>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+              <input class="btn_explore" type="button" name="btn_explore" value="EXPLORE">
+            </div>
+        </div>
+        <!--下排四个div的容器-->
+        <div class="bottom_layer">
+            <div class="bottom_word">
+              <h1>Conference Hall</h1>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting indstry</p>
+              <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+              <input class="btn_explore"  type="button" name="btn_explore" value="EXPLORE">
+            </div>
+            <div class="bottom_img">
+              <div class="triangle">
+              </div>
+              <img src="images/b3.jpg">
+            </div>
+              <div class="bottom_word">
+                <h1>Play Ground</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting indstry</p>
+                <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                <input class="btn_explore"  type="button" name="btn_explore" value="EXPLORE">
+              </div>
+              <div class="bottom_img">
+                <div class="triangle">
+                </div>
+                <img src="images/b4.jpg">
+              </div>
+        </div>
+      </div>
+
+
+    </div>
+    <!--gallery区-->
+    <div class="galley">
+      <div class="gallery-container">
+        <!--gallery区的标题部分-->
+        <div class="title">
+          <h1>GALLERY</h1>
+          <div class="lines"></div>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+        </div>
+
+        <div class="show">
+          <div class="first-show">
+            <div class="container">
+              <img src="images/03-01.jpg">
+              <div>SCIENCE LAB</div>
+            </div>
+            <div class="container">
+              <img src="images/03-02.jpg">
+              <div>INDOOR STADIUM</div>
+            </div>
+            <div class="container">
+              <img src="images/03-03.jpg">
+              <div>TRANSPORTATION</div>
+            </div>
+          </div>
+          <div class="second-show">
+            <div class="container">
+              <img src="images/03-04.jpg">
+              <div>KIDS ROOM</div>
+            </div>
+            <div class="container">
+              <img src="images/03-05.jpg">
+              <div>MEDITATION CLASSES</div>
+            </div>
+            <div class="container">
+              <img src="images/03-06.jpg">
+              <div>KIDS PLAY GROUND</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--页脚区-->
+    <div class="footer">
+      <p>&copy; 20120 yuanRoundRound.com 京ICP备13046642号</p>
+    </div>
+
+
+
+</body>
+
+</html>
