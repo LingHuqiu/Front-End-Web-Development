@@ -1,0 +1,199 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+@font-face {font-family: 'iconfont';
+    src: url('../img/font/iconfont.eot');
+    src: url('../img/font/iconfont.eot') format('embedded-opentype'),
+    url('../img/font/iconfont.woff') format('woff'),
+    url('../img/font/iconfont.ttf') format('truetype'),
+    url('../img/font/iconfont.svg#iconfont') format('svg');
+}
+ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+}
+a:link,a:visited{
+  color:#5e5e5e;
+}
+body{
+  font-family:"微软雅黑";
+	color: #14191e;
+}
+.main{
+  width: 1200px;
+  height: 460px;
+  /* 水平居中对齐 */
+  margin: 30px auto;
+
+  position: relative;
+}
+.banner{
+  width: 1200px;
+  height: 460px;
+  position:relative;
+  /* background-color: green; */
+}
+.banner-slide{
+  width: 1200px;
+  height: 460px;
+  background-repeat: no-repeat;
+  float: left;
+  display: none;
+}
+.slide-active{
+	display:block;
+}
+.slide1{
+	background-image:url(../img/bg1.jpg);
+}
+
+.slide2{
+	background-image:url(../img/bg2.jpg);
+}
+
+.slide3{
+	background-image:url(../img/bg3.jpg);
+}
+.main .button{
+  /* 根据导航栏的width定位 */
+  width: 40px;
+  height: 80px;
+  /* 所以其父级元素要相对定位 */
+  position: absolute;
+  top:50%;
+  left: 244px;
+  margin-top: -40px;
+  background: url(../img/arrow.png) center center no-repeat ;
+  transform:rotate(180deg);
+}
+.main .button:hover{
+  background-color: #333;
+  opacity: 0.8
+  /* 这一条代码是为了IE浏览器实现不透明度为80%
+  因为如果用 opacity:0.8; IE会不支持的  */
+  filter:alpha(opacity=80);
+}
+.main .next{
+  transform: rotate(0deg);
+  /**因为mbutton设置了left属性，
+  当同时有Left和right属性且有矛盾时，Left属性生效**/
+  left: auto;
+  right: 0px;
+}
+.main .dots{
+  position: absolute;
+  right: 44px;
+  bottom: 24px;
+  text-align: center;
+  line-height: 12px;
+}
+.main .dots span{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(7, 17, 27, 0.4);
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.8) inset;
+  margin-left: 8px;
+}
+
+.dots span.active{
+  box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;
+	background-color: #ffffff;
+}
+
+/**导航栏**/
+.main .menu-box{
+  width: 244px;
+  height: 460px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: rgba(7,17,27,0.5);
+  opacity:0.5;
+  z-index: 1
+}
+
+.main .menu-content{
+  width: 244px;
+  height: 460px;
+  position: absolute;
+  top:0px;
+  left: 0px;
+  padding-top: 6px;
+  box-sizing: border-box;
+  /* background-color: blue; */
+  z-index: 2;
+}
+.menu-item{
+  height: 64px;
+  line-height: 64px;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0 24px;
+  position: relative;
+}
+.menu-item a{
+  display: block;
+  color:#fff;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+  padding: 0 8px;
+}
+.menu-item i{
+  position: absolute;
+  right: 32px;/*8+24px*/
+  font-family: "iconfont";
+  color: rgba(255,255,255,0.2);
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+}
+.sub-menu{
+  width: 720px;
+  height: 460px;
+  box-sizing: border-box;
+  position: absolute;
+  top:0;
+  left: 244px;
+  background: #fff;
+  border: 1px solid #d9dde1;
+  z-index: 581;
+  box-shadow: 0px 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+.sub-menu .inner-box{
+  width: 100%;
+  height: 100%;
+  background:url(../img/fe.png) no-repeat;
+  /* display:none; */
+}
+.sub-menu .sub-inner-box{
+  width: 652px;
+  margin-left: 40px;
+  overflow: hidden;
+}
+.sub-menu .sub-inner-box .title{
+  margin-top: 28px;
+  margin-bottom: 30px;
+  color:#f01414;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: bold;
+}
+.sub-menu .sub-inner-box .sub-row{
+  margin-bottom: 25px;
+}
+.bold{
+  font-weight: bold;
+}
+.mr10{
+  margin-right: 10px;
+}
+.ml10{
+  margin-left: 10px;
+}
+.hidden{
+  display: none;
+}
